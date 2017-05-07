@@ -1,11 +1,28 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="renderer.js"></script>
+    <script src="server.js"></script>
 </head>
 <body>
-    <h1></h1>
+    <div id="create" class="create">
+        <input type="text" id="name" placeholder="Имя сервера">
+        <input type="text" id="port" placeholder="Порт">
+        <div class="label">
+            <p>Уровни:</p>
+            <select id="level">
+                <option value="w8">Пожалуйста подождите...</option>
+            </select>
+        </div>
+        <div class="label">
+            <p>Тесты:</p>
+            <select id="test">
+                <option value="w8">Пожалуйста подождите...</option>
+            </select>
+        </div>
+        <button onclick="host();">Запустить</button>
+    </div>
 </body>
 </html>
