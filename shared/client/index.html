@@ -1,11 +1,35 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script src="renderer.js"></script>
+    <script src="game.js"></script>
 </head>
 <body>
-    <h1></h1>
+    <div class="connect" id="connect">
+        <div id="new" class="new">
+            <input type="text" id="name" placeholder="Имя сервера">
+            <input type="text" id="ip" placeholder="ip-адресс сервера">
+            <input type="text" id="port" placeholder="Порт">
+            <button onclick="favourite.add();">Добавить</button>
+        </div>
+        <div class="found">
+            <table id="list">
+                <tbody id="tlist">
+                <tr>
+                    <th>Имя</th>
+                    <th>IP</th>
+                    <th>Порт</th>
+                    <th>Подключиться</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>    
+    <script>
+        //
+        favourite.refresh();
+    </script>
 </body>
 </html>
