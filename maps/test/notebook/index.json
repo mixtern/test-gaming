@@ -1,0 +1,10 @@
+{
+  "textures":{
+    "list":["block.png","bgrnd.png","plr.png","door1.png","door2.png","door3.png","door4.png"],
+    "blocks":[0],
+    "background":1,
+    "player":2,
+    "doors":[3,4,5,6]
+  },
+  "roomCount":2
+}
