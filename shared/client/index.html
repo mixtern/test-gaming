@@ -26,7 +26,15 @@
                 </tbody>
             </table>
         </div>
-    </div>    
+    </div>
+    <div class="game hide" id="game">
+        <canvas height="600" width="800" id="background"></canvas>
+        <canvas height="600" width="800" id="main"></canvas>
+        <canvas height="600" width="800" id="player"></canvas>
+        <canvas height="600" width="800" id="gui"></canvas>
+        <canvas height="600" width="800" id="hidden"></canvas>
+    </div>
+    <div id="done" class="hide"><p class="done">Тест завершён</p><br\><p id="status"></p></div>
     <script>
         favourite.refresh();
     </script>
