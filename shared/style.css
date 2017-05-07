@@ -1,4 +1,30 @@
-*{
-	padding:0;
-	margin: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+html,body {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+button,input {
+    text-align: center;
+    height:50px;
+    margin-top:15px;
+    width: 250px;
+    border-radius:25px;
+    background-color: white;
+}
+button:focus,input:focus{
+    outline: none;
+}
+.buttons {
+    width: 250px;
+    height: 115px;
+    margin-left: calc(400px - 125px);
+    margin-top: calc(300px - 57px);
 }
