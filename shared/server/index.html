@@ -24,5 +24,22 @@
         </div>
         <button onclick="host();">Запустить</button>
     </div>
+    <div id="hold" class="hold hide">
+        <!--TODO server status-->
+        <ul id="ips"></ul>
+        <div id="console" class="hide">
+            <p id="output"></p>
+            <input type="text" id="command">
+        </div>
+        <div id="stats-container">
+            <table id="stats">
+                <tr>
+                    <td>Имя</td>
+                    <td>IP-адрес</td>
+                    <td>Результат</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
