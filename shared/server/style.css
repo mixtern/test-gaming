@@ -46,7 +46,7 @@ html,body{
     width:100%;
     height:20%;
     overflow: auto;
-	border-radius:5px;
+    border-radius:5px;
     text-align: center;
 }
 #ips>li{
@@ -69,8 +69,8 @@ html,body{
     display:inline-block;
     height: 50%;
     width: 40%;
-	
-	display:none;
+    
+    display:none;
 }
 #output {
     display:block;
@@ -98,9 +98,17 @@ html,body{
     min-height: 25px;
 }
 #stats>tbody>tr{
-    width:100%;
-    line-height:5%;
+    width: 95%;
+    line-height: 100%;
 }
-#stats>tbody>tr>td{
+td,th{
     height:100%;
+    width: 40%;
+    text-align: center;
+}
+td:nth-child(n+3),th:nth-child(n+3) {
+    width: 20%;
+}
+table {
+    padding: 5px;
 }

@@ -1,8 +1,33 @@
-//Функция для подключения. Заготовка на будущее
+//Функция для подключения.
 function connect(ip,port){
-
+  var path= require('path');
+  //Отправляем AJAX запрос
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.onreadystatechange = function(){
+  if (httpRequest.readyState === XMLHttpRequest.DONE) {
+    //Если получаем OK то начниаем получение данных
+    if(httpRequest.responseText === 'OK'){
+      //Получаем набор уровней
+      getMaps();
+      //Получаем набор тестов
+      getTests();
+  }}};
+  window.ip= ip;
+  window.port = port;
+  if (ip.indexOf("http") === 0){
+    ip = ip.substr(ip.indexOf(':')+3);
+  }
+  if (ip.indexOf('/')+1){
+    window.root = 'http://'+ip.substr(0,ip.indexOf('/'))+':'+port +"/" +ip.substr(ip.indexOf('/'))
+  }
+  else {
+    window.root = 'http://'+ip+':'+port;
+  }
+  httpRequest.open('GET',window.root, true);
+  httpRequest.send(null);
 }
 //Объект для работы с списком серверов
+
 var favourite ={
   //Массив со всеми серверами
   list:[],
